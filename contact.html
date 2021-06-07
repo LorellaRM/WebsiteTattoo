@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seven Tattoo - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.html" type="text/css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img class="logo" src="logo.PNG"  alt="logo">
+            </a>
+            <ul class="enlaces-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tattoo.html">Tatuajes</a></li>
+                <li><a href="promo.html">Promociones</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact-form">
+        <form action="action_page.php">
+
+            <label for="fname">Nombre</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Apellido</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="place">Elige tu tienda más cercana</label>
+            <select id="place" name="place">
+              <option value="centro">Madrid Centro</option>
+              <option value="alcorcon">Alcorcón</option>
+            </select>
+        
+            <label for="subject">Mensaje</label>
+            <textarea id="textarea" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Enviar">
+        
+          </form>
+    </section>
+    <footer>
+        <p>Created by: The Rigth Way Desings ®
+        </p>
+    </footer>
+</body>
+
+</html>

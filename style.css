@@ -1,0 +1,192 @@
+html {
+    font-size: 63%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #EDF2F4;
+    overflow: scroll;
+
+}
+
+.logo {
+    height: 3vw;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+    background-color: #2B2D42;
+}
+
+.enlaces-menu {
+    display: flex;
+    padding: 0;
+}
+
+.enlaces-menu li {
+    padding: 0 40px;
+    list-style-type: none;
+    transition: 0.3s;
+}
+
+.enlaces-menu li a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #EDF2F4;
+    font-weight: 200;
+}
+
+.enlaces-menu li:hover {
+    background-color: #EF233C;
+    width: 100%;
+}
+
+footer {
+    background-color: #8D99AE;
+    font-size: 1.5vw;
+    font-weight: 150;
+    padding: 4px 1vw;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    align-self: flex-end;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+/* DISPOSITIVOS MOVILES */
+
+@media (max-width: 768px) {
+    body {
+        overflow: scroll;
+    }
+
+    .logo {
+        margin-left: 1vw;
+    }
+
+
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    .enlaces-menu{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .enlaces-menu li {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .enlaces-menu li a {
+        font-size: 1.3rem;
+        font-weight: 100;
+    }
+
+    .enlaces-menu li {
+        padding: 12px;
+    }
+
+}
+
+/* ESTILO DE PAGINA DE TATUAJES */
+
+.jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-bottom: 0;
+    background-color: #EDF2F4;
+  }
+  
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+  /*
+  
+  .card > img {
+    margin-bottom: .75rem;
+  }
+  */
+  .card-header {
+    font-size: 2rem;
+  }
+  
+  .card {
+    width: 40vw;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+
+
+
+/* ESTILO DE PAGINA DE CONTACTO */
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;  
+    border: 1px solid #D90429; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #D90429;
+    color: EDF2F4;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #EF233C;
+  }
+  
+  .contact-form {
+    border-radius: 8px;
+    background-color: #8D99AE;
+    padding: 20px;
+    width: 80%;
+    margin: 10%;
+    
+  }
+
+  
